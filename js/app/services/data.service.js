@@ -4,6 +4,7 @@ dataJSON.chats = [{
     "client_id": 101,
     "manager_id": 100,
     "lastMessage": "Tu: perfecto, nos pondremos en contacto para confirmar la cita",
+    "subject": "Contratación fondo de inversión",
     "date": "10-03-2016",
     "time": "09:",
     "messagesUnread": "2",
@@ -14,6 +15,7 @@ dataJSON.chats = [{
     "client_id": 101,
     "manager_id": 100,
     "lastMessage": "Tu: perfecto, nos pondremos en contacto para confirmar la cita",
+    "subject": "Contratación fondo de inversión",
     "date": "18-03-2016",
     "time": "15:00 - 16:30",
     "messagesUnread": "1",
@@ -24,6 +26,7 @@ dataJSON.chats = [{
     "client_id": 102,
     "manager_id": 100,
     "lastMessage": "Tu: perfecto, nos pondremos en contacto para confirmar la cita",
+    "subject": "Contratación fondo de inversión",
     "date": "11-03-2016",
     "time": "09:00",
     "messagesUnread": "3",
@@ -34,6 +37,7 @@ dataJSON.chats = [{
     "client_id": 103,
     "manager_id": 100,
     "lastMessage": "Tu: perfecto, nos pondremos en contacto para confirmar la cita",
+    "subject": "Contratación fondo de inversión",
     "date": "18-03-2016",
     "time": "15:00 - 16:30",
     "messagesUnread": "3",
@@ -44,6 +48,7 @@ dataJSON.chats = [{
     "client_id": 104,
     "manager_id": 100,
     "lastMessage": "Tu: perfecto, nos pondremos en contacto para confirmar la cita",
+    "subject": "Contratación fondo de inversión",
     "date": "19-03-2016",
     "time": "10:00 - 11:30",
     "messagesUnread": "0",
@@ -54,6 +59,7 @@ dataJSON.chats = [{
     "client_id": 105,
     "manager_id": 100,
     "lastMessage": "Tu: perfecto, nos pondremos en contacto para confirmar la cita",
+    "subject": "Contratación fondo de inversión",
     "date": "11-03-2016",
     "time": "09:00 - 11:00",
     "messagesUnread": "2",
@@ -64,6 +70,7 @@ dataJSON.chats = [{
     "client_id": 106,
     "manager_id": 100,
     "lastMessage": "Tu: perfecto, nos pondremos en contacto para confirmar la cita",
+    "subject": "Contratación fondo de inversión",
     "date": "10-03-2016",
     "time": "12:00 - 14:00",
     "messagesUnread": "0",
@@ -74,6 +81,7 @@ dataJSON.chats = [{
     "client_id": 107,
     "manager_id": 100,
     "lastMessage": "Tu: perfecto, nos pondremos en contacto para confirmar la cita",
+    "subject": "Contratación fondo de inversión",
     "date": "11-03-2016",
     "time": "09:00 - 11:00",
     "messagesUnread": "2",
@@ -156,42 +164,42 @@ dataJSON.clients = [{
 dataJSON.managers = [{
     "id": 100,
     "photo": "img/a1.jpg",
-    "name": "David Santiago"    
+    "name": "David Santiago"
 },
 {
     "id": 101,
     "photo": "img/a2.jpg",
-    "name": "Monica Smith"    
+    "name": "Monica Smith"
 },
 {
     "id": 102,
     "photo": "img/a3.jpg",
-    "name": "Michael Smith"    
+    "name": "Michael Smith"
 },
 {
     "id": 103,
     "photo": "img/a4.jpg",
-    "name": "Janet Smith"    
+    "name": "Janet Smith"
 },
 {
     "id": 104,
     "photo": "img/a5.jpg",
-    "name": "Alice Smith"    
+    "name": "Alice Smith"
 },
 {
     "id": 105,
     "photo": "img/a6.jpg",
-    "name": "Monica Cale"    
+    "name": "Monica Cale"
 },
 {
     "id": 106,
     "photo": "img/a7.jpg",
-    "name": "Mark Jordan"    
+    "name": "Mark Jordan"
 },
 {
     "id": 107,
     "photo": "img/a8.jpg",
-    "name": "Janet Smith"    
+    "name": "Janet Smith"
 }];
 
 dataJSON.meetings = [{
@@ -200,9 +208,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Contratación de fondo",
     "description": "Descripción de la cita.",
-    "date": "11-02-2016",
+    "date": "11-03-2016",
     "time": "09:00 - 11:00",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": true
 },
 {
     "id": 102,
@@ -210,9 +219,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Firma de documentación",
     "description": "Descripción de la cita.",
-    "date": "18-02-2016",
+    "date": "18-03-2016",
     "time": "15:00 - 16:30",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": false
 },
 {
     "id": 103,
@@ -220,9 +230,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Declaración de la renta",
     "description": "Descripción de la cita.",
-    "date": "19-02-2016",
+    "date": "19-03-2016",
     "time": "10:00 - 11:30",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": true
 },
 {
     "id": 104,
@@ -230,9 +241,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Contratación de fondo",
     "description": "Descripción de la cita.",
-    "date": "11-02-2016",
+    "date": "11-03-2016",
     "time": "09:00 - 11:00",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": false
 },
 {
     "id": 105,
@@ -240,9 +252,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Baja de cuenta",
     "description": "Descripción de la cita.",
-    "date": "10-02-2016",
+    "date": "10-03-2016",
     "time": "12:00 - 14:00",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": true
 },
 {
     "id": 106,
@@ -250,9 +263,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Contratación de fondo",
     "description": "Descripción de la cita.",
-    "date": "11-02-2016",
+    "date": "11-03-2016",
     "time": "09:00 - 11:00",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": false
 },
 {
     "id": 107,
@@ -260,9 +274,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Firma de documentación",
     "description": "Descripción de la cita.",
-    "date": "18-02-2016",
+    "date": "18-03-2016",
     "time": "15:00 - 16:30",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": true
 },
 {
     "id": 108,
@@ -270,9 +285,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Declaración de la renta",
     "description": "Descripción de la cita.",
-    "date": "19-02-2016",
+    "date": "19-03-2016",
     "time": "10:00 - 11:30",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": false
 },
 {
     "id": 109,
@@ -280,9 +296,10 @@ dataJSON.meetings = [{
     "manager_id": 100,
     "subject": "Contratación de fondo",
     "description": "Descripción de la cita.",
-    "date": "11-02-2016",
+    "date": "11-03-2016",
     "time": "09:00 - 11:00",
-    "location": "En la oficina"
+    "location": "En la oficina",
+    "busy": true
 }];
 
 dataJSON.messages = [{
@@ -290,7 +307,7 @@ dataJSON.messages = [{
     "chat_id": 100,
     "is_manager": false,
     "date": "26/01/2016 09:30:31",
-    "message": "Hola, me gustaría contratar una póliza"    
+    "message": "Hola, me gustaría contratar una póliza"
 },
 {
     "id": 101,
@@ -304,14 +321,14 @@ dataJSON.messages = [{
     "chat_id": 100,
     "is_manager": false,
     "date": "26/01/2016 09:30:37",
-    "message": "Pues la quería para mi cuenta de ahorro que tengo allí en MoraBanc"    
+    "message": "Pues la quería para mi cuenta de ahorro que tengo allí en MoraBanc"
 },
 {
     "id": 103,
     "chat_id": 100,
     "is_manager": true,
     "date": "26/01/2016 09:30:40",
-    "message": "De acuerdo, no se retire"    
+    "message": "De acuerdo, no se retire"
 },
 
 {
@@ -319,7 +336,7 @@ dataJSON.messages = [{
     "chat_id": 104,
     "is_manager": false,
     "date": "26/01/2016 09:30:31",
-    "message": "Hola, me gustaría contratar una póliza"    
+    "message": "Hola, me gustaría contratar una póliza"
 },
 {
     "id": 101,
@@ -333,14 +350,14 @@ dataJSON.messages = [{
     "chat_id": 104,
     "is_manager": false,
     "date": "26/01/2016 09:30:37",
-    "message": "Pues la quería para mi cuenta de ahorro que tengo allí en MoraBanc"    
+    "message": "Pues la quería para mi cuenta de ahorro que tengo allí en MoraBanc"
 },
 {
     "id": 103,
     "chat_id": 104,
     "is_manager": true,
     "date": "26/01/2016 09:30:40",
-    "message": "De acuerdo, no se retire"    
+    "message": "De acuerdo, no se retire"
 }];
 
 
@@ -356,7 +373,7 @@ function serviceData($http) {
     var items = {};
     var refresh = false;
     var cookieName = "morabanc_refresh";
-    
+
     function readJson(type, callback) {
         /*var url = 'js/app/data/' + type + '.json';
 
@@ -384,7 +401,7 @@ function serviceData($http) {
     }
 
     function getAll(type, callback) {
-        
+
         var cookie = getCookie(cookieName);
         if(!cookie || cookie == null) {
             refresh = true;
@@ -403,7 +420,7 @@ function serviceData($http) {
                 callback(data);
             })
         } else {
-            
+
             if(items[type] && items[type] != null) {
                 console.log("Coge del objeto en memoria");
                 callback(items[type]);
@@ -420,7 +437,7 @@ function serviceData($http) {
                 })
             }
 
-            
+
         }
     }
 
@@ -441,7 +458,7 @@ function serviceData($http) {
         }
         return "";
     }
-    
+
     return {
         getAll: getAll,
 
@@ -454,7 +471,7 @@ function serviceData($http) {
                     }
                 }
             });
-        }, 
+        },
 
         add : function(type, obj, callback) {
             getId(type, function(id) {

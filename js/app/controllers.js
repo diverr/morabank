@@ -3,7 +3,7 @@ function CalendarCtrl($scope, Meetings, Clients, Helper, $location) {
 
     vm.form = {};
     vm.clients = [];
-    
+
     vm.submitForm = function() {
         alert("Cita añadida");
         return;
@@ -16,14 +16,21 @@ function CalendarCtrl($scope, Meetings, Clients, Helper, $location) {
 
 
     vm.events = [];
-            
+
     Meetings.getAll(function(meetings) {
         for(var i = 0; i < meetings.length; i++) {
             var meeting = meetings[i];
+
+            var className = '';
+            if(meeting.busy) {
+              className = 'fc-busy';
+            }
+
             vm.events.push({
                 title: meeting.subject,
                 start: moment(Helper.transformDate(meeting.date)).toDate(),
-                url: ''
+                url: '',
+                className: className
             });
         }
     });
@@ -50,12 +57,12 @@ function MeetingsCtrl($scope, $timeout, Meetings, Clients, Helper) {
     var vm = this;
     vm.meetings = [];
     vm.clients = [];
-    
+
     vm.search = {};
     vm.search.client = null;
     vm.search.results = [];
     vm.isSearch = false;
-    
+
     Meetings.getAll(function(data) {
         vm.meetings = data;
 
@@ -67,7 +74,7 @@ function MeetingsCtrl($scope, $timeout, Meetings, Clients, Helper) {
     Clients.getAll(function(data) {
         vm.clients = data;
     });
-    
+
     vm.doSearch = function() {
         vm.search.results = [];
         vm.isSearch = true;
@@ -89,7 +96,7 @@ function MeetingsCtrl($scope, $timeout, Meetings, Clients, Helper) {
 
     vm.form = {};
     vm.clients = [];
-    
+
     vm.submitForm = function() {
         alert("Cita añadida");
         return;
@@ -113,7 +120,7 @@ function ChatsArchiveCtrl(Chats) {
     var vm = this;
     vm.form = {};
     var id = 100;
-    
+
     // cogemos los datos del chat
     Chats.get(id, function(data) {
         vm.form = data;
@@ -125,7 +132,7 @@ function ChatsCtrl($scope, $timeout, Chats) {
     var vm = this;
     vm.chats = [];
     vm.myMessage = '';
-    
+
     Chats.getAll(function(data) {
         vm.chats = data;
 
@@ -180,4 +187,3 @@ angular
     .controller('ChatsCtrl', ChatsCtrl)
     .controller('ChatViewCtrl', ChatViewCtrl)
     .controller('ChatsArchiveCtrl', ChatsArchiveCtrl);
-
