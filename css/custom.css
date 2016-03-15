@@ -4,6 +4,10 @@ body {
     background-color: #153f6f !important;
 }
 
+h2.h2-small {
+  font-size: 1.3em;
+}
+
 .navbar-fixed-top, .navbar-static-top {
     background: #1e2633;
 }
@@ -22,7 +26,7 @@ body.mini-navbar .navbar-default .nav > li > a {
 @media(max-width: 1024px) {
     .logo-column {
         display: none;
-    }    
+    }
     .responsive {
         display: block;
     }
@@ -91,7 +95,7 @@ body.mini-navbar .navbar-default .nav > li > a {
     color: #143f6f;
 }
 .naranja {
-    color: #F9B062; 
+    color: #F9B062;
 }
 .rojo {
     color: red;

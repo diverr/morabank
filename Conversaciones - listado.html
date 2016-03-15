@@ -314,6 +314,7 @@
 
                                                                 <th style="width: 65px;" data-sort-ignore="true"></th>
                                                                 <th >Cliente</th>
+                                                                <th >Asunto</th>
                                                                 <th data-sort-initial="descending" style="width: 150px;" data-hide="phone,tablet">Fecha</th>
                                                                 <th style="width: 150px;" data-hide="phone,tablet">Hora</th>
                                                                 <th style="width: 100px;" >Mensajes</th>
@@ -332,6 +333,7 @@
 
                                                                 <td class="client-avatar"><img alt="image" src="{{item.client.photo}}"> </td>
                                                                 <td><a class="client-link azul2" ui-sref="chats.view({id: item.id})">{{item.client.name}} {{item.client.lastName}}</a><br/><small class="noresponsive">{{item.lastMessage}}</small></td>
+                                                                <td>{{item.subject}}</td>
                                                                 <td>{{item.date}}</td>
                                                                 <td>{{item.time}}</td>
                                                                 <td align="center">
