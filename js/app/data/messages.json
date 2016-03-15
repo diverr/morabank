@@ -1,0 +1,57 @@
+[{
+    "id": 100,
+    "chat_id": 100,
+    "is_manager": false,
+    "date": "26/01/2016 09:30:31",
+    "message": "Hola, me gustaría contratar una póliza"    
+},
+{
+    "id": 101,
+    "chat_id": 100,
+    "is_manager": true,
+    "date": "26/01/2016 09:35",
+    "message": "Muy bien, ¿para que cuenta quiere asociar esta póliza?"
+},
+{
+    "id": 102,
+    "chat_id": 100,
+    "is_manager": false,
+    "date": "26/01/2016 09:30:37",
+    "message": "Pues la quería para mi cuenta de ahorro que tengo allí en MoraBanc"    
+},
+{
+    "id": 103,
+    "chat_id": 100,
+    "is_manager": true,
+    "date": "26/01/2016 09:30:40",
+    "message": "De acuerdo, no se retire"    
+},
+
+{
+    "id": 100,
+    "chat_id": 104,
+    "is_manager": false,
+    "date": "26/01/2016 09:30:31",
+    "message": "Hola, me gustaría contratar una póliza"    
+},
+{
+    "id": 101,
+    "chat_id": 104,
+    "is_manager": true,
+    "date": "26/01/2016 09:35",
+    "message": "Muy bien, ¿para que cuenta quiere asociar esta póliza?"
+},
+{
+    "id": 102,
+    "chat_id": 104,
+    "is_manager": false,
+    "date": "26/01/2016 09:30:37",
+    "message": "Pues la quería para mi cuenta de ahorro que tengo allí en MoraBanc"    
+},
+{
+    "id": 103,
+    "chat_id": 104,
+    "is_manager": true,
+    "date": "26/01/2016 09:30:40",
+    "message": "De acuerdo, no se retire"    
+}]

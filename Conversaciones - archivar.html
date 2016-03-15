@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html ng-app="morabanc">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+
+    <!-- Plugins -->
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/angular-datapicker.css" rel="stylesheet">
+    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+
+    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+
+
+    <link href="css/jquery.e-calendar.css" rel="stylesheet">
+
+    <!-- jQuery and Bootstrap -->
+    <script src="js/jquery/jquery-2.1.1.min.js"></script>
+    <script src="js/plugins/jquery-ui/jquery-ui.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+
+</head>
+
+<!-- ControllerAs syntax -->
+<body class="gray-bg" landing-scrollspy id="page-top">
+
+    <!-- Main view  -->
+    <div ui-view>
+
+
+
+
+        <!-- Wrapper-->
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <div>
+
+
+                <nav class="navbar-default navbar-static-side" role="navigation">
+
+                    <div class="logo-container">
+                        <img class="logo-column" src="img/logo.png" >
+                    </div>
+
+                    <div class="sidebar-collapse">
+                        <ul side-navigation class="nav metismenu" id="side-menu">
+                            <li class="nav-header">
+
+                                <div class="dropdown profile-element" dropdown>
+                                    <img alt="image" class="img-circle" src="img/marcos-navarro.jpg" style="max-width: 60px;"/>
+                                    <a class="dropdown-toggle" dropdown-toggle href>
+                                        <span class="clear">
+                                            <span class="block m-t-xs">
+                                                <strong class="font-bold">Marcos Navarro</strong>
+                                            </span>
+
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="logo-element">
+                                    <img src="img/logo-responsive-morabanc.png" style="width: 100%;">
+                                </div>
+                            </li>
+
+                            <li >
+                                <a ui-sref="app.desktop"><i class="fa fa-th-large"></i> <span class="nav-label">ESCRITORIO</span> </a>
+                            </li>
+
+                            <li >
+                                <a ui-sref="app.calendar"><i class="fa fa-table"></i> <span class="nav-label">CALENDARIO</span> </a>
+                            </li>
+
+                            <li >
+                                <a ui-sref="meetings.index"><i class="fa fa-edit"></i> <span class="nav-label">CITAS</span> </a>
+                                <ul class="nav nav-second-level" ng-class="{in: $state.includes('meetings')}">
+                                    <li ><a ui-sref="meetings.index">Listado de citas</a></li>
+                                    <li ><a ui-sref="meetings.new">Crear cita</a></li>
+                                    <li ><a ui-sref="meetings.search">Buscador</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="active">
+                                <a ui-sref="chats.index"><i class="fa fa-laptop"></i> <span class="nav-label">MENSAJES</span> </a>
+                            </li>
+
+
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+            <!-- End: Navigation -->
+
+            <!-- Page wraper -->
+            <!-- ng-class with current state name give you the ability to extended customization your view -->
+            <div id="page-wrapper" class="gray-bg">
+
+                <!-- Page wrapper -->
+                <!-- Navbar -->
+                <div>
+                    <div class="row border-bottom">
+                        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+
+                            <div class="navbar-header">
+                                <span minimaliza-sidebar></span>
+                                <form role="search" class="navbar-form-custom" method="post" action="views/search_results.html">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="{{ 'SEARCH' | translate }}" class="form-control" name="top-search" id="top-search">
+                                    </div>
+                                </form>
+                            </div>
+
+
+                            <ul class="nav navbar-top-links navbar-right">
+                                <li>
+                                    <span class="m-r-sm text-muted welcome-message">Bienvenido Marcos</span>
+                                </li>
+
+                                <li class="dropdown" dropdown>
+                                    <a class="dropdown-toggle count-info" href dropdown-toggle>
+                                        <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-messages">
+                                        <li>
+                                            <div class="dropdown-messages-box">
+                                                <a ui-sref="profile" class="pull-left">
+                                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                                </a>
+
+                                                <div>
+                                                    <small class="pull-right"></small>
+                                                    <strong>Mike Loreipsum</strong> le envió un mensaje. <br>
+                                                    <small class="text-muted">hace 3 días 7:58 pm - 10.06.2014</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <div class="dropdown-messages-box">
+                                                <a ui-sref="profile" class="pull-left">
+                                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                                </a>
+
+                                                <div>
+                                                    <small class="pull-right text-navy"></small>
+                                                    <strong>Chris Johnatan Overtunk</strong> le envió un mensaje.<br>
+                                                    <small class="text-muted">Ayer 1:21 pm - 11.06.2014</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <div class="dropdown-messages-box">
+                                                <a ui-sref="profile" class="pull-left">
+                                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                                </a>
+
+                                                <div>
+                                                    <small class="pull-right"></small>
+                                                    <strong>Monica Smith</strong> le envió un mensaje. <br>
+                                                    <small class="text-muted">hace 2 días 2:30 am - 11.06.2014</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <div class="text-center link-block">
+                                                <a ui-sref="mailbox.inbox">
+                                                    <i class="fa fa-envelope"></i> <strong>Leer todos los mensajes</strong>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown" dropdown>
+                                    <a class="dropdown-toggle count-info" href dropdown-toggle>
+                                        <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-alerts">
+                                        <li>
+                                            <a ui-sref="inbox">
+                                                <div>
+                                                    <i class="fa fa-envelope fa-fw"></i> <strong>16</strong> Mensajes de 3 conversaciones pendientes
+                                                    <span class="pull-right text-muted small"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a ui-sref="profile">
+                                                <div>
+                                                    <i class="fa fa-calendar fa-fw"></i> <strong>3</strong> Solicitudes de cita pendientes
+                                                    <span class="pull-right text-muted small"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a ui-sref="grid_options">
+                                                <div>
+                                                    <i class="fa fa-comments fa-fw"></i> <strong>2</strong> Conversaciones nuevas
+                                                    <span class="pull-right text-muted small"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <div class="text-center link-block">
+                                                <a ui-sref="miscellaneous.notify">
+                                                    <strong>Ver todas</strong>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a ui-sref="login">
+                                        <i class="fa fa-sign-out"></i> Desconectar
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+                <!-- End: Navbar -->
+
+                <!-- Main view  -->
+                <div ui-view>
+
+                    <div class="row wrapper border-bottom white-bg page-heading">
+                        <div class="col-lg-10">
+                            <h2>Conversaciones</h2>
+
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/">Inicio</a>
+                                </li>
+                                <li>
+                                    <a>Conversaciones</a>
+                                </li>
+                                <li class="active">
+                                    <strong>Conversaciones recientes</strong>
+                                </li>
+                            </ol>
+
+                        </div>
+                        <div class="col-lg-2">
+
+                        </div>
+                    </div>
+                    <div class="wrapper wrapper-content  animated fadeInRight" ng-controller="ChatsArchiveCtrl as vm">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="ibox">
+
+                                    <div class="ibox-title">
+                                        <h2>Archivar conversación</h2>
+                                    </div>
+
+
+                                    <div class="ibox-content">
+
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Cliente</label>
+
+                                                <div class="col-lg-10">
+                                                    <div style="padding-top: 5px;">
+                                                        <strong>{{vm.form.client.name}} {{vm.form.client.lastName}}</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Asunto</label>
+                                                <div class="col-lg-10">
+                                                    {{vm.form.lastMessage}}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Fecha</label>
+                                                <div class="col-lg-10">
+
+                                                    {{vm.form.date}}
+
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Categorías</label>
+                                                <div class="col-lg-10">
+                                                    <select name="" id="" class="form-control select2_demo_2" multiple="multiple">
+                                                        <option value="Nombre de categoria 1">Nombre de categoría 1</option>
+                                                        <option value="Nombre de categoria 2">Nombre de categoría 2</option>
+                                                        <option value="Nombre de categoria 3">Nombre de categoría 3</option>
+                                                        <option value="Nombre de categoria 4">Nombre de categoría 4</option>
+                                                        <option value="Nombre de categoria 5">Nombre de categoría 5</option>
+                                                        <option value="Nombre de categoria 6">Nombre de categoría 6</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="form-group">
+                                                <div class="col-lg-offset-2 col-lg-10 pull-right">
+                                                    <div class="pull-right">
+                                                        <button type="submit" class="btn btn-w-m btn-success" ng-click="vm.archive();"><i class="fa fa-check"></i> Archivar</button>
+                                                        <button type="button" class="btn btn-gris"><i class="fa fa-ban"></i> Cancelar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+                                        <script>
+
+
+                                            $(function(){
+                                                $(".select2_demo_2").select2();
+                                            })
+
+                                        </script>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- End: Main view  -->
+
+                <!-- Footer -->
+                <div>
+                    <div class="footer">
+                        <div class="pull-right">
+
+                        </div>
+                        <div>
+                            <strong>Copyright</strong> Morabanc &copy; 2016
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End: Footer -->
+
+            </div>
+            <!-- End page wrapper-->
+
+
+
+        </div>
+        <!-- End wrapper-->
+
+
+
+
+    </div>
+
+
+
+    <!-- Calendar -->
+    <script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script src="js/plugins/fullcalendar/gcal.js"></script>
+
+    <!-- MetsiMenu -->
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- SlimScroll -->
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Peace JS -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/app/global.js"></script>
+
+    <!-- Main Angular scripts-->
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/angular/angular-sanitize.js"></script>
+    <script src="js/angular-translate/angular-translate.min.js"></script>
+
+    <script src="js/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+    <script src="js/plugins/angular-idle/angular-idle.js"></script>
+
+
+
+    <!-- Anglar App Script -->
+    <script src="js/app/app.js"></script>
+    <script src="js/app/translations.js"></script>
+    <script src="js/app/directives.js"></script>
+    <script src="js/app/controllers.js"></script>
+
+    <!-- Services -->
+    <script src="js/app/services/data.service.js"></script>
+    <script src="js/app/services/helper.service.js"></script>
+    <script src="js/app/services/meeting.service.js"></script>
+    <script src="js/app/services/chat.service.js"></script>
+    <script src="js/app/services/manager.service.js"></script>
+    <script src="js/app/services/client.service.js"></script>
+
+    <!-- Plugins -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+    <script src="js/plugins/footable/angular-footable.js"></script>
+    <script src="js/plugins/moment/moment.min.js"></script>
+    <script src="js/plugins/moment/locale/es.js"></script>
+    <script src="js/plugins/datapicker/angular-datepicker.js"></script>
+    <script src="js/plugins/clockpicker/clockpicker.js"></script>
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="js/plugins/chosen/chosen.js"></script>
+    <script src="js/plugins/fullcalendar/calendar.js"></script>
+    <script src="js/plugins/select2/select2.full.min.js"></script>
+    <script src="js/plugins/jquery.toaster.js"></script>
+
+
+    <!-- Directives -->
+    <script src="js/app/directives/calendar.directive.js"></script>
+    <script src="js/app/directives/newMeetingForm.directive.js"></script>
+    <script src="js/app/directives/editMeetingForm.directive.js"></script>
+    <script src="js/app/directives/managersList.directive.js"></script>
+    <script src="js/app/directives/messagesList.directive.js"></script>
+
+
+
+</body>
+</html>

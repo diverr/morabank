@@ -1,0 +1,90 @@
+[{
+    "id": 101,
+    "client_id": 100,
+    "manager_id": 100,
+    "subject": "Contratación de fondo",
+    "description": "Descripción de la cita.",
+    "date": "11-02-2016",
+    "time": "09:00 - 11:00",
+    "location": "En la oficina"
+},
+{
+    "id": 102,
+    "client_id": 102,
+    "manager_id": 100,
+    "subject": "Firma de documentación",
+    "description": "Descripción de la cita.",
+    "date": "18-02-2016",
+    "time": "15:00 - 16:30",
+    "location": "En la oficina"
+},
+{
+    "id": 103,
+    "client_id": 103,
+    "manager_id": 100,
+    "subject": "Declaración de la renta",
+    "description": "Descripción de la cita.",
+    "date": "19-02-2016",
+    "time": "10:00 - 11:30",
+    "location": "En la oficina"
+},
+{
+    "id": 104,
+    "client_id": 104,
+    "manager_id": 100,
+    "subject": "Contratación de fondo",
+    "description": "Descripción de la cita.",
+    "date": "11-02-2016",
+    "time": "09:00 - 11:00",
+    "location": "En la oficina"
+},
+{
+    "id": 105,
+    "client_id": 105,
+    "manager_id": 100,
+    "subject": "Baja de cuenta",
+    "description": "Descripción de la cita.",
+    "date": "10-02-2016",
+    "time": "12:00 - 14:00",
+    "location": "En la oficina"
+},
+{
+    "id": 106,
+    "client_id": 106,
+    "manager_id": 100,
+    "subject": "Contratación de fondo",
+    "description": "Descripción de la cita.",
+    "date": "11-02-2016",
+    "time": "09:00 - 11:00",
+    "location": "En la oficina"
+},
+{
+    "id": 107,
+    "client_id": 107,
+    "manager_id": 100,
+    "subject": "Firma de documentación",
+    "description": "Descripción de la cita.",
+    "date": "18-02-2016",
+    "time": "15:00 - 16:30",
+    "location": "En la oficina"
+},
+{
+    "id": 108,
+    "client_id": 107,
+    "manager_id": 100,
+    "subject": "Declaración de la renta",
+    "description": "Descripción de la cita.",
+    "date": "19-02-2016",
+    "time": "10:00 - 11:30",
+    "location": "En la oficina"
+},
+{
+    "id": 109,
+    "client_id": 101,
+    "manager_id": 100,
+    "subject": "Contratación de fondo",
+    "description": "Descripción de la cita.",
+    "date": "11-02-2016",
+    "time": "09:00 - 11:00",
+    "location": "En la oficina"
+}]

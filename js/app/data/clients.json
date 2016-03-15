@@ -1,0 +1,72 @@
+[{
+    "id": 100,
+    "altamira": "234234",
+    "photo": "/img/a1.jpg",
+    "name": "Carles",
+    "lastName": "Fernández",
+    "contact": "+376 600 123 000",
+    "contact_address": "Oficina 31 Avda Merritxell 35, Cafeteria Antonio, Calle Delicias 12 Madrid"
+},
+{
+    "id": 101,
+    "altamira": "333345",
+    "photo": "/img/a2.jpg",
+    "name": "Jordi",
+    "lastName": "García",
+    "contact": "jgarcia74@hotmail.com",
+    "contact_address": "Oficina 31 Avda Merritxell 35, Cafeteria Antonio, Calle Delicias 12 Madrid"
+},
+{
+    "id": 102,
+    "altamira": "384545",
+    "photo": "/img/a3.jpg",
+    "name": "Marta",
+    "lastName": "Forcadell",
+    "contact": "mlopez_s@hotmail.com",
+    "contact_address": "Oficina 31 Avda Merritxell 35, Cafeteria Antonio, Calle Delicias 12 Madrid"
+},
+{
+    "id": 103,
+    "altamira": "304857",
+    "photo": "/img/a4.jpg",
+    "name": "Federico",
+    "lastName": "Trillo",
+    "contact": "+376 600 123 000",
+    "contact_address": "Oficina 31 Avda Merritxell 35, Cafeteria Antonio, Calle Delicias 12 Madrid"
+},
+{
+    "id": 104,
+    "altamira": "202398",
+    "photo": "/img/a5.jpg",
+    "name": "Juan",
+    "lastName": "García",
+    "contact": "+376 660 822 143",
+    "contact_address": "Oficina 31 Avda Merritxell 35, Cafeteria Antonio, Calle Delicias 12 Madrid"
+},
+{
+    "id": 105,
+    "altamira": "348534",
+    "photo": "/img/a6.jpg",
+    "name": "Mónica",
+    "lastName": "Carpintero",
+    "contact": "+376 600 123 000",
+    "contact_address": "Oficina 31 Avda Merritxell 35, Cafeteria Antonio, Calle Delicias 12 Madrid"
+},
+{
+    "id": 106,
+    "altamira": "034857",
+    "photo": "/img/a7.jpg",
+    "name": "Gabriel",
+    "lastName": "Ruiz",
+    "contact": "jgarcia74@hotmail.com",
+    "contact_address": "Oficina 31 Avda Merritxell 35, Cafeteria Antonio, Calle Delicias 12 Madrid"
+},
+{
+    "id": 107,
+    "altamira": "230982",
+    "photo": "/img/a8.jpg",
+    "name": "Lucio",
+    "lastName": "Camacho",
+    "contact": "mlopez_s@hotmail.com",
+    "contact_address": "Oficina 31 Avda Merritxell 35, Cafeteria Antonio, Calle Delicias 12 Madrid"
+}]

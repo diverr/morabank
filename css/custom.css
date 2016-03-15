@@ -1,0 +1,135 @@
+/* Custom styles override */
+
+body {
+    background-color: #153f6f !important;
+}
+
+.navbar-fixed-top, .navbar-static-top {
+    background: #1e2633;
+}
+
+.nav-header {
+    background: none;
+}
+
+/* ICONOS MENÚ RESPONSIVE */
+body.mini-navbar .navbar-default .nav > li > a {
+    font-size: 25px;
+}
+.responsive {
+    display: none;
+}
+@media(max-width: 1024px) {
+    .logo-column {
+        display: none;
+    }    
+    .responsive {
+        display: block;
+    }
+    .noresponsive {
+        display: none;
+    }
+    button.responsive {
+        display: inline-block;
+    }
+}
+
+
+
+/* LOGO */
+.logo-container {
+    text-align: center;
+}
+
+.logo-column {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* CALENDARIO */
+
+.fc-event, .fc-agenda .fc-event-time, .fc-event a {
+    background-color: #153F6F;
+    border-color: #153F6F;
+}
+
+/* BOTONES */
+.btn-morado {
+    background-color: #688EBD;
+    border-color: #688EBD;
+    color: white;
+}
+.btn-gris {
+    background-color: #6E757F;
+    border-color: #688EBD;
+    color: white;
+}
+
+/* BAQUETONES DE ESCRITORIO */
+.custom1-bg {
+    background-color: #649ECC;
+    color: #fff;
+}
+.custom2-bg {
+    background-color: #2A4F7B;
+    color: #fff;
+}
+.custom3-bg {
+    background-color: #4D5258;
+    color: #fff;
+}
+.custom1-bg a, .custom2-bg a, .custom3-bg a{
+    color: #fff;
+}
+
+/* COLORES DE TEXTOS */
+.azul1 {
+    color: #2587C8;
+}
+.azul2 {
+    color: #143f6f;
+}
+.naranja {
+    color: #F9B062; 
+}
+.rojo {
+    color: red;
+}
+
+/* MENSAJES */
+.alert .message {
+    background-color: inherit !important;
+    padding: 0 !important;
+    border: none !important;
+}
+.alert .message a {
+    color: #fff;
+    text-decoration: underline;
+}
+.alert-chat {
+    color: #fff;
+    background-color: #649ECC;
+    border-color: #649ECC;
+}
+.alert-calendar {
+    color: #fff;
+    background-color: #2A4F7B;
+    border-color: #2A4F7B;
+}
+.alert-message {
+    color: #fff;
+    background-color: #4D5258;
+    border-color: #4D5258;
+}
+.m-b-md a {
+    text-decoration: underline;
+}
+.navbar-top-links .dropdown-alerts {
+    width: 350px;
+}
+
+/* RESULTADO DE BÚSQUEDAS */
+.search-result a.search-link {
+    color: #000;
+}
